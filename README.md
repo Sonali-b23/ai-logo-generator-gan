@@ -95,12 +95,23 @@ streamlit run app/app.py
 
 ---
 
+## 📈 Current Progress
+
+**Phase 1 Completed:**
+* Set up PyTorch integration for pulling `logo-wizard/modern-logo-dataset` from Hugging Face Hub.
+* Built the central `config.py` handling image dimensions, batch logic, and WGAN hyperparameters.
+
+**Phase 2 Completed:**
+* Built the **Generator** using `ConvTranspose2d` layers to upsample noise combined with text embeddings.
+* Built the **Critic** (Discriminator) adapted for **WGAN-GP** (using unconstrained outputs and `InstanceNorm2d` instead of `BatchNorm2d`).
+
+---
+
 ## 📊 Future Improvements
 
-* 🔥 Use CLIP for better text-image alignment
-* 🎨 Style and color control (e.g., "minimal", "luxury")
-* 🧠 Improve GAN stability (WGAN, DCGAN)
-* ☁️ Deploy on cloud (AWS / Hugging Face Spaces)
+* 🔄 Build the WGAN-GP training loop (Phase 4).
+* 🔥 Integrate OpenAI CLIP embeddings to replace basic string text (Phase 3).
+* ☁️ Deploy via Streamlit Web App (Phase 5).
 
 ---
 
