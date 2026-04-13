@@ -1,3 +1,4 @@
+torch
 torchvision
 numpy
 matplotlib
@@ -6,3 +7,6 @@ streamlit
 tqdm
 scikit-learn
 opencv-python
+transformers
+datasets
+pandas
